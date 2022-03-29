@@ -13,9 +13,9 @@ export default function App(){
     })
 
     return(
-        <>
+        <main>
             <Header/>
             {Cards}
-        </>
+        </main>
     )
 }

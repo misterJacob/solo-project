@@ -3,7 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 800px;
+  max-width: 550px;
+  background-color: #cdcad5;
   margin: auto;
 }
 
@@ -11,22 +12,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-header {
-  background-color: red;
+main {
+  background-color: #f5f5f5;
 }
 
-.card {
+header {
+  width: 550px;
+  height: 55px;
+  background: #f55a5a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.card .place-img {
-  height: 123px;
-  width: 168px;
+header .globe {
+  width: 24px;
+  height: 24px;
+  padding-right: 7px;
 }
 
-.card .text-wrap {
+header .header-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.card-wrap {
+  max-width: 550px;
+  background-color: #f5f5f5;
+}
+
+.card-wrap .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 18px;
+}
+
+.card-wrap .card .place-img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  margin: 19px;
+}
+
+.card-wrap .card .text-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,9 +75,14 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.card .text-wrap .location {
+.card-wrap .card .text-wrap .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,21 +98,23 @@ header {
           align-items: center;
 }
 
-.card .text-wrap .location .location-img {
+.card-wrap .card .text-wrap .location .location-img {
   width: 7px;
   height: 9.55px;
 }
 
-.card .text-wrap .location .title-location {
+.card-wrap .card .text-wrap .location .title-location {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 10.24px;
   line-height: 12px;
   letter-spacing: 0.17em;
+  margin: 0;
+  padding: 0;
 }
 
-.card .text-wrap .location .google-map {
+.card-wrap .card .text-wrap .location .google-map {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -77,25 +125,52 @@ header {
   color: #918e9b;
 }
 
-.card .text-wrap .title {
+.card-wrap .card .text-wrap .location .google-map:hover {
+  color: blue;
+  font-size: 10.50px;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-wrap .card .text-wrap .title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.card .text-wrap .dates .date {
+.card-wrap .card .text-wrap .dates {
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrap .card .text-wrap .dates .date {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 10.24px;
   line-height: 12px;
+  margin: 0;
+  padding: 0;
 }
 
-.card .text-wrap .description {
+.card-wrap .card .text-wrap .description {
   font-weight: 400;
   font-size: 10.24px;
   line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrap .card .line {
+  width: 478px;
+  height: 0px;
+  left: 40px;
+  top: 286px;
+  border: 1px solid #f5f5f5;
 }
 /*# sourceMappingURL=main.css.map */
